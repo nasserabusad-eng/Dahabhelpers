@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>حاسبة سعر الذهب | احسب قيمة ذهبك لكل العيارات (24 و22 و21 و18) | دهب</title>
+<meta name="description" content="حاسبة سعر الذهب المجانية: أدخل الوزن والعيار وسعر الجرام لتعرف قيمة ذهبك فوراً مع المصنعية، ومقارنة القيمة بين عيار 24 و22 و21 و18. دقيقة وبالعربية.">
+<meta name="keywords" content="حاسبة الذهب, حاسبة سعر الذهب, سعر جرام الذهب, حساب قيمة الذهب, سعر الذهب عيار 21, مصنعية الذهب">
+<link rel="canonical" href="https://dahabhelpers.com/calculator.html">
+<meta property="og:title" content="حاسبة سعر الذهب — دهب">
+<meta property="og:description" content="احسب قيمة ذهبك بأي عيار في ثوانٍ.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar">
+<meta property="og:image" content="https://d8j0ntlcm91z4.cloudfront.net/user_3Gqr8cNvaHecl4CfmnUHSrGscwp/hf_20260918_145918_4c407b23-9e6a-4ff8-9833-19df261bdfe5.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<!-- ANALYTICS SLOT -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"حاسبة سعر الذهب","url":"https://dahabhelpers.com/calculator.html","applicationCategory":"FinanceApplication","operatingSystem":"Any","inLanguage":"ar","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap mast">
+    <a href="index.html" class="brand"><span class="mk"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l4-3 5 3 5-3 4 3-2 10H5z"/><path d="M8 8l4 10 4-10"/></svg></span><span class="word">دهب</span></a>
+    <nav class="nav"><a href="index.html">الرئيسية</a><a href="calculator.html" class="on">حاسبة الذهب</a><a href="zakat.html">زكاة الذهب</a><a href="karat.html">عيار الذهب</a></nav>
+    <span class="grow"></span>
+  </div>
+</header>
+
+<main class="toolwrap">
+  <div class="crumbs"><a href="index.html">الرئيسية</a> ← حاسبة سعر الذهب</div>
+  <div class="ttitle"><h1>حاسبة سعر الذهب</h1><p>احسب قيمة ذهبك بأي عيار من سعر الجرام والوزن</p></div>
+
+  <div class="ad ad-lead"><span class="lbl">مساحة إعلانية</span></div>
+
+  <div class="calc">
+    <div class="field">
+      <label>العيار</label>
+      <div class="karats" id="karats">
+        <div class="kbtn on" data-k="24">24</div>
+        <div class="kbtn" data-k="22">22</div>
+        <div class="kbtn" data-k="21">21</div>
+        <div class="kbtn" data-k="18">18</div>
+      </div>
+    </div>
+    <div class="row2">
+      <div class="field">
+        <label>الوزن <span class="hint">بالجرام</span></label>
+        <input class="input" id="weight" type="number" inputmode="decimal" placeholder="مثال: 10" min="0" step="0.01">
+      </div>
+      <div class="field">
+        <label>سعر جرام العيار <span class="hint" id="priceHint">(عيار 24)</span></label>
+        <input class="input" id="price" type="number" inputmode="decimal" placeholder="سعر الجرام اليوم" min="0" step="0.01">
+      </div>
+    </div>
+    <div class="field">
+      <label>المصنعية لكل جرام <span class="hint">اختياري</span></label>
+      <input class="input" id="making" type="number" inputmode="decimal" placeholder="0" min="0" step="0.01">
+    </div>
+    <button class="btn" id="calcBtn">احسب القيمة</button>
+
+    <div class="result" id="result">
+      <div class="big-num"><div class="l">القيمة الإجمالية</div><div class="v"><span id="total">0</span> <small id="cur"></small></div></div>
+      <div class="rrow"><span class="k">قيمة الذهب</span><span class="val" id="goldVal">0</span></div>
+      <div class="rrow"><span class="k">إجمالي المصنعية</span><span class="val" id="makeVal">0</span></div>
+      <div class="rrow"><span class="k">وزن الذهب الصافي</span><span class="val" id="pureW">0 جم</span></div>
+
+      <h2 class="serif" style="font-size:17px;color:var(--cream);margin:20px 0 6px">قيمة نفس الوزن بكل عيار</h2>
+      <table class="ktable">
+        <thead><tr><th>العيار</th><th>سعر الجرام</th><th>قيمة الذهب</th></tr></thead>
+        <tbody id="cmp"></tbody>
+      </table>
+
+      <div class="note">💡 <b>ملاحظة:</b> السعر الذي تُدخله هو سعر السوق لديك اليوم. تختلف الأسعار من محل لآخر وتتغيّر يومياً — استخدم النتيجة كتقدير قبل البيع أو الشراء.</div>
+    </div>
+  </div>
+
+  <div class="prose" style="margin-top:26px">
+    <h2>كيف تُحسب قيمة الذهب؟</h2>
+    <p>قيمة أي قطعة ذهب = وزنها بالجرام × سعر جرام عيارها، ثم تُضاف المصنعية (أجرة التصنيع) التي يحدّدها المحل لكل جرام. كلما ارتفع العيار زاد نقاء الذهب وسعره: فعيار 24 هو الأنقى (ذهب خالص)، يليه 22 ثم 21 ثم 18. لمعرفة الوزن الصافي من الذهب نضرب الوزن في نسبة النقاء (العيار ÷ 24).</p>
+    <p>مثال: 10 جرام عيار 21 وسعر جرام العيار 60 = 600 قيمة ذهب، ولو كانت المصنعية 5 لكل جرام تُضاف 50، فيصبح الإجمالي 650. استخدم الحاسبة أعلاه لإدخال أرقامك مباشرة.</p>
+  </div>
+</main>
+
+<footer class="foot"><div class="fine">© <span id="yr"></span> دهب (dahabhelpers.com) — الأسعار تقديرية، تحقّق من السوق قبل أي معاملة.</div></footer>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+(function(){
+  "use strict";
+  var KARATS=[24,22,21,18];
+  var karat=24;
+  var karatsEl=document.getElementById('karats'), priceHint=document.getElementById('priceHint');
+  var weightEl=document.getElementById('weight'), priceEl=document.getElementById('price'), makingEl=document.getElementById('making');
+  var result=document.getElementById('result');
+
+  function fmt(n){ return (Math.round(n*100)/100).toLocaleString('en-US',{minimumFractionDigits:0,maximumFractionDigits:2}); }
+
+  karatsEl.addEventListener('click',function(e){
+    var b=e.target.closest('.kbtn'); if(!b)return;
+    karatsEl.querySelectorAll('.kbtn').forEach(function(x){x.classList.remove('on')}); b.classList.add('on');
+    karat=parseInt(b.dataset.k,10); priceHint.textContent='(عيار '+karat+')';
+    if(result.classList.contains('show')) calc();
+  });
+
+  function calc(){
+    var w=parseFloat(weightEl.value)||0;
+    var p=parseFloat(priceEl.value)||0;
+    var mk=parseFloat(makingEl.value)||0;
+    if(w<=0||p<=0){ result.classList.remove('show'); return; }
+    // price entered is for the SELECTED karat -> derive 24k base price
+    var base24=p/(karat/24);
+    var goldVal=w*p;
+    var makeVal=w*mk;
+    var total=goldVal+makeVal;
+    var pureW=w*(karat/24);
+    document.getElementById('goldVal').textContent=fmt(goldVal);
+    document.getElementById('makeVal').textContent=fmt(makeVal);
+    document.getElementById('pureW').textContent=fmt(pureW)+' جم';
+    document.getElementById('total').textContent=fmt(total);
+    // comparison across karats (same weight)
+    var rows=KARATS.map(function(k){
+      var pk=base24*(k/24);
+      var vk=w*pk;
+      return '<tr><td>عيار '+k+'</td><td>'+fmt(pk)+'</td><td>'+fmt(vk)+'</td></tr>';
+    }).join('');
+    document.getElementById('cmp').innerHTML=rows;
+    result.classList.add('show');
+  }
+  document.getElementById('calcBtn').addEventListener('click',calc);
+  [weightEl,priceEl,makingEl].forEach(function(el){ el.addEventListener('input',function(){ if(result.classList.contains('show')) calc(); }); });
+  weightEl.addEventListener('keydown',function(e){ if(e.key==='Enter') calc(); });
+  priceEl.addEventListener('keydown',function(e){ if(e.key==='Enter') calc(); });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>حاسبة زكاة الذهب | كم زكاة ذهبك ونصابه (85 جرام) | دهب</title>
+<meta name="description" content="حاسبة زكاة الذهب المجانية: أدخل وزن ذهبك وعياره وسعر الجرام لتعرف هل بلغ النصاب (85 جرام ذهب) وكم تجب فيه الزكاة (2.5%). دقيقة وبالعربية.">
+<meta name="keywords" content="حاسبة زكاة الذهب, زكاة الذهب, نصاب الذهب, نصاب زكاة الذهب, كم زكاة الذهب, حساب زكاة الذهب">
+<link rel="canonical" href="https://dahabhelpers.com/zakat.html">
+<meta property="og:title" content="حاسبة زكاة الذهب — دهب">
+<meta property="og:description" content="اعرف هل بلغ ذهبك النصاب وكم زكاته في ثوانٍ.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar">
+<meta property="og:image" content="https://d8j0ntlcm91z4.cloudfront.net/user_3Gqr8cNvaHecl4CfmnUHSrGscwp/hf_20260918_145918_c9da0b95-fbef-4680-a5df-d2750a73fcee.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<!-- ANALYTICS SLOT -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"حاسبة زكاة الذهب","url":"https://dahabhelpers.com/zakat.html","applicationCategory":"FinanceApplication","operatingSystem":"Any","inLanguage":"ar","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap mast">
+    <a href="index.html" class="brand"><span class="mk"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l4-3 5 3 5-3 4 3-2 10H5z"/><path d="M8 8l4 10 4-10"/></svg></span><span class="word">دهب</span></a>
+    <nav class="nav"><a href="index.html">الرئيسية</a><a href="calculator.html">حاسبة الذهب</a><a href="zakat.html" class="on">زكاة الذهب</a><a href="karat.html">عيار الذهب</a></nav>
+    <span class="grow"></span>
+  </div>
+</header>
+
+<main class="toolwrap">
+  <div class="crumbs"><a href="index.html">الرئيسية</a> ← حاسبة زكاة الذهب</div>
+  <div class="ttitle"><h1>حاسبة زكاة الذهب</h1><p>اعرف هل بلغ ذهبك النصاب وكم تجب فيه الزكاة</p></div>
+
+  <div class="ad ad-lead"><span class="lbl">مساحة إعلانية</span></div>
+
+  <div class="calc">
+    <div class="field">
+      <label>العيار</label>
+      <div class="karats" id="karats">
+        <div class="kbtn" data-k="24">24</div>
+        <div class="kbtn on" data-k="21">21</div>
+        <div class="kbtn" data-k="22">22</div>
+        <div class="kbtn" data-k="18">18</div>
+      </div>
+    </div>
+    <div class="row2">
+      <div class="field">
+        <label>وزن الذهب <span class="hint">بالجرام</span></label>
+        <input class="input" id="weight" type="number" inputmode="decimal" placeholder="مثال: 100" min="0" step="0.01">
+      </div>
+      <div class="field">
+        <label>سعر جرام العيار <span class="hint" id="priceHint">(عيار 21)</span></label>
+        <input class="input" id="price" type="number" inputmode="decimal" placeholder="سعر الجرام اليوم" min="0" step="0.01">
+      </div>
+    </div>
+    <button class="btn" id="calcBtn">احسب الزكاة</button>
+
+    <div class="result" id="result">
+      <div class="big-num"><div class="l" id="bigLabel">الزكاة الواجبة</div><div class="v"><span id="zakat">0</span></div></div>
+      <div class="rrow"><span class="k">وزن الذهب الصافي (عيار 24)</span><span class="val" id="pureW">0 جم</span></div>
+      <div class="rrow"><span class="k">النصاب</span><span class="val">85 جم ذهب خالص</span></div>
+      <div class="rrow"><span class="k">قيمة ذهبك</span><span class="val" id="goldVal">0</span></div>
+      <div class="rrow"><span class="k">نسبة الزكاة</span><span class="val">2.5%</span></div>
+      <div class="note" id="verdict"></div>
+      <div class="note">⚖️ <b>ملاحظة فقهية:</b> النصاب 85 جرام ذهب خالص والزكاة 2.5% عند بلوغه ومرور الحول. يرى بعض العلماء أن ذهب الزينة المستعمَل لا زكاة فيه — راجع أهل العلم لحالتك الخاصة.</div>
+    </div>
+  </div>
+
+  <div class="prose" style="margin-top:26px">
+    <h2>كيف تُحسب زكاة الذهب؟</h2>
+    <p>تجب الزكاة في الذهب إذا بلغ <b>النصاب</b> وهو ما يعادل <b>85 جراماً من الذهب الخالص (عيار 24)</b>، ومرّ عليه <b>حول</b> (عام هجري كامل). فإذا بلغ ذهبك النصاب، فمقدار الزكاة <b>2.5%</b> من قيمته السوقية.</p>
+    <p>للتحقّق من النصاب نحوّل وزن ذهبك إلى وزنه الصافي من الذهب الخالص (الوزن × العيار ÷ 24)، فإن بلغ 85 جراماً أو أكثر وجبت الزكاة. أدخل أرقامك في الحاسبة أعلاه لتعرف النتيجة فوراً.</p>
+  </div>
+</main>
+
+<footer class="foot"><div class="fine">© <span id="yr"></span> دهب (dahabhelpers.com) — الحاسبة للتقدير والاسترشاد، وليست فتوى.</div></footer>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+(function(){
+  "use strict";
+  var NISAB=85; // grams pure gold
+  var RATE=0.025;
+  var karat=21;
+  var karatsEl=document.getElementById('karats'), priceHint=document.getElementById('priceHint');
+  var weightEl=document.getElementById('weight'), priceEl=document.getElementById('price');
+  var result=document.getElementById('result');
+  function fmt(n){ return (Math.round(n*100)/100).toLocaleString('en-US',{minimumFractionDigits:0,maximumFractionDigits:2}); }
+
+  karatsEl.addEventListener('click',function(e){
+    var b=e.target.closest('.kbtn'); if(!b)return;
+    karatsEl.querySelectorAll('.kbtn').forEach(function(x){x.classList.remove('on')}); b.classList.add('on');
+    karat=parseInt(b.dataset.k,10); priceHint.textContent='(عيار '+karat+')';
+    if(result.classList.contains('show')) calc();
+  });
+
+  function calc(){
+    var w=parseFloat(weightEl.value)||0;
+    var p=parseFloat(priceEl.value)||0;
+    if(w<=0||p<=0){ result.classList.remove('show'); return; }
+    var pureW=w*(karat/24);
+    var goldVal=w*p; // = pureW * price24
+    var reached=pureW>=NISAB;
+    document.getElementById('pureW').textContent=fmt(pureW)+' جم';
+    document.getElementById('goldVal').textContent=fmt(goldVal);
+    var v=document.getElementById('verdict'), z=document.getElementById('zakat'), bl=document.getElementById('bigLabel');
+    if(reached){
+      var zk=goldVal*RATE;
+      z.textContent=fmt(zk); bl.textContent='الزكاة الواجبة';
+      v.innerHTML='✅ <b>بلغ ذهبك النصاب.</b> تجب فيه الزكاة إن مرّ عليه الحول: '+fmt(zk)+' (2.5% من قيمته).';
+    } else {
+      z.textContent='لا زكاة'; bl.textContent='النتيجة';
+      var need=NISAB-pureW;
+      v.innerHTML='ℹ️ <b>لم يبلغ النصاب.</b> وزنك الصافي '+fmt(pureW)+' جم، وينقصه '+fmt(need)+' جم للوصول إلى نصاب 85 جم — فلا زكاة فيه وحده. (يُضمّ إليه ما تملكه من ذهب أو فضة أو نقود عند بعض العلماء.)';
+    }
+    result.classList.add('show');
+  }
+  document.getElementById('calcBtn').addEventListener('click',calc);
+  [weightEl,priceEl].forEach(function(el){ el.addEventListener('input',function(){ if(result.classList.contains('show')) calc(); }); el.addEventListener('keydown',function(e){ if(e.key==='Enter') calc(); }); });
+})();
+</script>
+</body>
+</html>
